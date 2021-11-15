@@ -1,9 +1,26 @@
-// JSnack 1
 const result = document.querySelector(".result");
-let sum = 0;
 
-for (let i = 0; i < 5; i++) {
-    sum = sum + parseInt(prompt("Inserisci un numero da sommare"));
-}
+// JSnack 1
+// let sum = 0;
 
-result.innerHTML = `La somma è: ${sum}`;
+// //For
+// for (let i = 0; i < 5; i++) {
+//     sum = sum + parseInt(prompt("Inserisci un numero da sommare"));
+// }
+
+// //While
+// // let i = 0;
+// // while (i < 5) {
+// //     sum = sum + parseInt(prompt("Inserisci un numero da sommare"));
+// //     i++;
+// // }
+
+// result.innerHTML = `La somma è: ${sum}`;
+
+
+// --------------------------
+
+
+// JSnack 2
+const stringa1 = prompt("Inserisci la prima parola");
+const stringa2 = prompt("Inserisci la seconda parola");
