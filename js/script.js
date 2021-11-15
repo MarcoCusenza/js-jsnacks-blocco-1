@@ -39,7 +39,7 @@ const result = document.querySelector(".result");
 
 // JSnack 3
 let count = 0;
-let pot = 0;
+let pot = 1;
 
 while (pot <= 1000) {
     result.innerHTML += `${pot} `;
