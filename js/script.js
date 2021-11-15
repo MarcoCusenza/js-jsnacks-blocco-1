@@ -24,3 +24,11 @@ const result = document.querySelector(".result");
 // JSnack 2
 const stringa1 = prompt("Inserisci la prima parola");
 const stringa2 = prompt("Inserisci la seconda parola");
+
+if (stringa1.length == stringa2.length) {
+    result.innerHTML = `${stringa1} ${stringa2}`;
+} else if (stringa1.length > stringa2.length) {
+    result.innerHTML = `${stringa1}`;
+} else {
+    result.innerHTML = `${stringa2}`;
+}
