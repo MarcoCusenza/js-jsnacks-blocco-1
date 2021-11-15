@@ -22,13 +22,35 @@ const result = document.querySelector(".result");
 
 
 // JSnack 2
-const stringa1 = prompt("Inserisci la prima parola");
-const stringa2 = prompt("Inserisci la seconda parola");
+// const stringa1 = prompt("Inserisci la prima parola");
+// const stringa2 = prompt("Inserisci la seconda parola");
 
-if (stringa1.length == stringa2.length) {
-    result.innerHTML = `${stringa1} ${stringa2}`;
-} else if (stringa1.length > stringa2.length) {
-    result.innerHTML = `${stringa1}`;
-} else {
-    result.innerHTML = `${stringa2}`;
+// if (stringa1.length == stringa2.length) {
+//     result.innerHTML = `${stringa1} ${stringa2}`;
+// } else if (stringa1.length > stringa2.length) {
+//     result.innerHTML = `${stringa1}`;
+// } else {
+//     result.innerHTML = `${stringa2}`;
+// }
+
+
+// --------------------------
+
+
+// JSnack 3
+let count = 0;
+let pot = 0;
+
+while (pot <= 1000) {
+    result.innerHTML += `${pot} `;
+    pot = pow(2, count)
+    count++;
+}
+
+function pow(a, b) {
+    let power = a;
+    for (let i = 0; i < b; i++) {
+        power = power * a;
+    }
+    return power;
 }
